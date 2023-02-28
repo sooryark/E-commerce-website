@@ -2,9 +2,13 @@
  const navbar =  document.getElementById("navbar");
  const menuiconEL = document.getElementById("iconmenu");
  const closeicon = document.getElementById("iconclose");
+ const mainimgEl = document.getElementById("mainimg");
+ const smallpic = document.querySelectorAll(".smallimg");
+ const colorEl = document.querySelectorAll(".color");
  const icons = document.querySelector(".menu-icon");
  const menubar = document.querySelector(".menu");
  const menuitems = document.querySelectorAll(".menuitems");
+ const cards = document.querySelectorAll(".cards");
 
  //navbar toggle
  function togglemenu(){
@@ -35,4 +39,36 @@ window.addEventListener('scroll', function() {
 });
 
 
+smallpic[0].addEventListener("click",()=>{
+mainimgEl.src = smallpic[0].src;
+})
+smallpic[1].addEventListener("click",()=>{
+mainimgEl.src = smallpic[1].src;
+})
+smallpic[2].addEventListener("click",()=>{
+mainimgEl.src = smallpic[2].src;
+})
+smallpic[3].addEventListener("click",()=>{
+mainimgEl.src = smallpic[3].src;
+})
 
+colorEl[0].addEventListener("click",()=>{
+mainimgEl.src = smallpic[0].src;
+})
+colorEl[1].addEventListener("click",()=>{
+mainimgEl.src = smallpic[1].src;
+})
+colorEl[2].addEventListener("click",()=>{
+mainimgEl.src = smallpic[2].src;
+})
+colorEl[3].addEventListener("click",()=>{
+mainimgEl.src = smallpic[3].src;
+})
+
+
+for(i=0;i<cards.length;i++){
+ let cardsval = cards[i];
+  cardsval.addEventListener("click",()=>{
+    window.location.href = "product.html"
+   });
+}

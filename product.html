@@ -11,7 +11,7 @@
 </head>
 <body>
     <!--container box start-->
-    <div class="container">
+    <section class="container" id="bg">
         <!--nav header start-->
         <header>
             <nav id="navbar">
@@ -20,8 +20,8 @@
                 </div>
                 <div class="menu-bar">
                     <ul class="menu">
-                        <li><a href="#index.html" class="menuitems">Home</a></li>
-                        <li><a href="#shop.html" class="menuitems">Shop</a></li>
+                        <li><a href="#home" class="menuitems">Home</a></li>
+                        <li><a href="#shop" class="menuitems activebtn">Shop</a></li>
                         <li><a href="#blog" class="menuitems">Blog</a></li>
                         <li><a href="#about" class="menuitems">About</a></li>
                         <li><a href="#contact"class="menuitems">Contact</a></li>
@@ -36,23 +36,61 @@
         </header>
          <!--nav header start-->
 
-         <!--Hero section start-->
-        <div id="home">
-            <div class="hero-container">
-                <div class="content-section">
-                    <h3>"SUPER! value Deals".!</h3>
-                    <h1>ON ALL PRODUCTS!..</h1>
-                    <p>Pay less, stay in fashion!.</p>
-                    <p>save More With coupons $ up to 50% offer.</p>
-                    <button id="shop-btn">Shop Now</button>
+         <section id="singleproduct">
+            <div class="product-box">
+                <div class="product-img">
+                   <div class="main-img">
+                    <img src="css/images/productimg1.avif" id="mainimg">
+                   </div>
+                   <div class="select-img">
+                    <div class="smallpic" id="img1">
+                        <img src="css/images/productimg2.avif" class="smallimg">
+                    </div>
+                    <div class="smallpic" id="img2">
+                        <img src="css/images/productimg3.avif" class="smallimg">
+                    </div>
+                    <div class="smallpic" id="img3">
+                        <img src="css/images/productimg4.avif" class="smallimg">
+                    </div>
+                    <div class=smallpic id="img4">
+                        <img src="css/images/productimg5.avif" class="smallimg">
+                    </div>
+                   </div>
                 </div>
-                <div class="image-section">
-                    <img src="css/images/herobg.png" id="banner" alt="banner">
+                <div class="product-details">
+                    <p id="title"><a href="#index.html" onclick="window.location.href = 'index.html'">Home</a>/T-shirt</p>
+                    <h4>Men's Fshion T shirt</h4>
+                    <h3>$150.00</h3>
+                    <div class="sizes">
+                        <div>S</div>
+                        <div>M</div>
+                        <div>L</div>
+                        <div>XL</div>
+                        <div>XXL</div>
+                    </div>
+                    <div class="colors">
+                        <div class="color1 color"></div>
+                        <div  class="color2 color"></div>
+                        <div  class="color3 color"></div>
+                        <div  class="color4 color"></div>
+                    </div>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="quntity">
+                        <label for="qua">Quantity:</label>
+                        <input type="number" min="0" max="10" id="quantity" value="0">
+                    </div>
+                    <button id="addtocart">Add to cart:-<i class="fa-solid fa-cart-shopping"></i></button>
+                    <h5>Product Details</h5>
+                    <p id="productdet">Made from the world's finest Supima cotton, this Tee is one of Pangolin's softest! Supima Cotton represents less than 1% of all cultivated crops and has unique properties that make it stand apart from other types:Strength without added weight or stiffness; Softness with deep wrinkles met by long fibers which give off an elegant appearance as well as superior color retention ability.</p>
                 </div>
             </div>
-        </div>
-   <!--Hero section End-->
-
+         </section>
    <!--product section start-->
    <section id="products">
 
@@ -158,163 +196,17 @@
 
        <!--card items end-->
     </div>
-   </section>
-
-   <!--service card start-->
-   <section class="services">
-    <p>Repair Services</p>
-    <p>Up to 60% offer All T-Shirts & Accessories</p>
-    <p id="explorebtn">Explore More</p>
-   </section>
-   <!--service card end-->
-
-
-   <!--New Arrivals card start-->
-   <section id="new-arrivals">
-
-    <h1 class="products-header">New Arrivals</h1>
-
-    <p class="products-offer">New Morden Design with Special Offer!</p>
     <!--new arrivals card-->
-    <div class="product-items">
-
-       <div class="cards card1">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img10.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card2">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img11.jpg" alt="product-img"> 
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool-T-Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card3">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img13.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card4">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img14.jpg" alt="product-img"> 
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card5">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img15.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card6">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img16.jpg" alt="product-img">  
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card7">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img17.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card8">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img18.jpg" alt="product-img">  
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
+    
 
         <!--new arrivals card-->
-    </div>
    </section>
-   <!--banner-top section start-->
-   <section id="banner-top">
-    <div class="banner-box">
-        <div class="banner-1 bannerup-card">
-            <h4>Crazy deals</h4>
-            <p>buy 1 get 1 free</p>
-            <p>The best classic is on sale! at <span><i class="fa-solid fa-shirt"></i> Got Style?</span></p>
-            <button id="bannerbtn">Learn More</button>
-        </div>
-        <div class="banner-2 bannerup-card">
-            <h4>Summer&spring</h4>
-            <p>Upcomming season</p>
-            <p>The best classic is on sale! at <span><i class="fa-solid fa-shirt"></i> Got Style?</span></p>
-            <button id="bannerbtn">Collection</button>
-        </div>
-    </div>
-   </section>
-   <!--banner-top section end-->
 
-   <!--banner-down section start-->
-   <section id="banner-down">
-    <div class="banner-down-box">
-        <div class="bannerdown-1 bannerdown-card">
-            <h4>Summer Sale,New Arrivals</h4>
-            <h1>buy 1 get 1 free</h1>
-        </div>
-        <div class="bannerdown-2 bannerdown-card">
-            <h1>Big Sale</h1>
-            <h4>Order Now,only for you</h4>
-            <p>Buy 5 T-shirts Get 1 Free</p>
-        </div>
-        <div class="bannerdown-3 bannerdown-card">
-            <h4>Special Offer! Up to 50%</h4>
-            <h1>Just for you</h1>
-        </div>
-    </div>
+   <section id="morebtn">
+    <span>1</span>
+    <span>2</span>
+    <span><i class="fa-solid fa-arrow-right"></i></span>
    </section>
-   <!--banner-down section end-->
 
    <!--signupbox start-->
    <section id="signupbox">
@@ -373,7 +265,7 @@
     <p id="copyrights">Copyright &#169; sooryark|All Rights Reserved</p>
    </footer>
    <!--footer section end-->
-    </div>
+    </section>
  <!--container-box end-->
 </body>
    <script src="app.js"></script>
