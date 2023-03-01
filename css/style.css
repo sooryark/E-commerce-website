@@ -36,6 +36,7 @@ header nav{
     top:0;
     left: 0;
     background-color: #ffffff;
+    z-index: 100;
 }
 
 nav ul{
@@ -65,10 +66,11 @@ nav ul li a:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
     margin-bottom: 15px;
 }
+
 .content-section h3{
     font-size: 40px;
     font-weight: bolder;
@@ -125,6 +127,7 @@ nav ul li a:hover{
     border-radius: 15px;
     margin: 20px 5px;
     transition: 0.1s ease;
+    border: 3px solid #004543;
 }
 .cards:hover{
     transform: scale(0.9);
@@ -501,6 +504,138 @@ nav ul li a:hover{
     width:70%;
 }
 
+/*blog*/
+#blog-sec{
+    margin: 20px 0px;
+}
+#blog{
+    width:100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
+.blog-img img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.blog-content{
+    width:50%;
+}
+.blog-content p{
+    width:70%;
+    letter-spacing: 1px;
+}
+.blog-content  h5{
+    font-size: 20px;
+}
+.blog-content h6{
+    font-size: 14px;
+}
+
+/*about page*/
+
+.aboutus{
+    width:100%;
+    background-color: #004543;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.about-box{
+    width:100%;
+    height:auto;
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+    gap:20px;
+}
+.aboutimg{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+}
+#aboutpic{
+    width:400px;
+    height:400px;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 5px solid #004543;
+}
+.about-content{
+    width:50%;
+}
+.about-content p{
+    width:70%;
+    letter-spacing: 1px;
+}
+.about-content h5{
+    font-size: 26px;
+    color: #004543;
+}
+#app-mockup{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+.app-container{
+    width:800px;
+    height:500px;
+    background-color: #004543;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+}
+.mockup-content p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.mockup-content h3{
+    font-size: 32px;
+}
+.appbg{
+    width:200px;
+    height:400px;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(/css/images/model7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.appbg p{
+    margin-bottom: 80px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.app-container img{
+    width:250px;
+    height:250px;
+    object-fit: contain;
+}
+#camera{
+    position: absolute;
+    width:100px;
+    height:15px;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 23%;
+    top: 0%;
+}
+
 @media only screen and (min-width: 300px) and (max-width:600px){
     .container{
         width:100%;
@@ -671,6 +806,80 @@ nav ul li a:hover{
    .product-details #productdet{
     width: 100%;
    }
+   #blog{
+    width:100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.blog-img img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.blog-content{
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+}
+.blog-content p{
+    width:100%;
+    padding: 10px;
+    text-align: justify;
+}
+.about-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutimg{
+    width:70%;
+    padding: 10px;
+}
+#aboutpic{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #004543;
+}
+.about-content{
+    width:100%;
+}
+.about-content p{
+    width:100%;
+    text-align: justify;
+    padding: 10px;
+}
+.about-content h5{
+    text-align: center;
+}
+.app-container{
+    width:400px;
+    height: 800px;
+    background-color: #004543;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    gap:5px;
+}
+.mockup-content p{
+    font-size: 16px;
+}
+.mockup-content h3{
+    font-size: 18px;
+}
 
 }
 
@@ -794,5 +1003,79 @@ nav ul li a:hover{
    .product-details #productdet{
     width: 100%;
    }
+   #blog{
+    width:100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.blog-img img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.blog-content{
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+}
+.blog-content p{
+    width:100%;
+    padding: 10px;
+    text-align: justify;
+}
+.about-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutimg{
+    width:80%;
+    padding: 10px;
+}
+#aboutpic{
+    width:100%;
+    height:600px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #004543;
+}
+.about-content{
+    width:100%;
+}
+.about-content p{
+    width:100%;
+    text-align: justify;
+    padding: 10px;
+}
+.about-content h5{
+    text-align: center;
+}
+.app-container{
+    width:600px;
+    height: 800px;
+    background-color: #004543;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    gap:5px;
+}
+.mockup-content p{
+    font-size: 18px;
+}
+.mockup-content h3{
+    font-size: 22px;
+}
    
 }

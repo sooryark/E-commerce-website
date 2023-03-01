@@ -9,6 +9,10 @@
  const menubar = document.querySelector(".menu");
  const menuitems = document.querySelectorAll(".menuitems");
  const cards = document.querySelectorAll(".cards");
+ const homebtn = document.getElementById("home");
+ const shopbtn = document.getElementById("shop");
+ const blogbtn = document.getElementById("blogel");
+ const aboutbtn = document.getElementById("about");
 
  //navbar toggle
  function togglemenu(){
@@ -38,7 +42,7 @@ window.addEventListener('scroll', function() {
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-
+/*
 smallpic[0].addEventListener("click",()=>{
 mainimgEl.src = smallpic[0].src;
 })
@@ -64,7 +68,7 @@ mainimgEl.src = smallpic[2].src;
 colorEl[3].addEventListener("click",()=>{
 mainimgEl.src = smallpic[3].src;
 })
-
+*/
 
 for(i=0;i<cards.length;i++){
  let cardsval = cards[i];
@@ -72,3 +76,22 @@ for(i=0;i<cards.length;i++){
     window.location.href = "product.html"
    });
 }
+for(i=0;i<homebtn.length;i++){
+ let homebtnEL = homebtn[i];
+  homebtnEL.addEventListener("click",()=>{
+    window.location.href = "index.html"
+   });
+}
+
+homebtn.addEventListener("click",()=>{
+  window.location.href="index.html"
+})
+shopbtn.addEventListener("click",()=>{
+  window.location.href="shop.html"
+})
+blogbtn.addEventListener("click",()=>{
+  window.location.href="blog.html"
+})
+aboutbtn.addEventListener("click",()=>{
+  window.location.href="about.html"
+})
