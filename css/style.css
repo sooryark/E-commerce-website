@@ -636,6 +636,109 @@ nav ul li a:hover{
     top: 0%;
 }
 
+/*contact page*/
+.contactus{
+   text-align: center;
+   width:100%;
+   height:20vh;
+   background-color: #004543;
+   color:white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.contact-box{
+    display: flex;
+    margin: 10px 0px;
+}
+.contact-details{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    gap:15px;
+}
+.contact-details h4{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.contact-details p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-address{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    gap:20px;
+}
+.contact-location{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#contact-form{
+    width:100%;
+    height: auto;
+    margin: 50px 0px;
+    background-color: #004543;
+}
+#contact-form img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.contact-from-box{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+.form{
+   width:60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   color: white;
+}
+.form input{
+    width:700px;
+    height:40px;
+    margin: 10px 0px;
+    text-align: left;
+    padding-left:10px;
+    border-radius: 5px;
+    border: 1px solid #004543;
+    outline: none;
+}
+#submitbtn{
+    padding: 10px 20px;
+    background-color: #d8f0fb;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.profile{
+    width:30%;
+}
+.profile .profileitems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap:20px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 25px;
+}
+
 @media only screen and (min-width: 300px) and (max-width:600px){
     .container{
         width:100%;
@@ -881,6 +984,70 @@ nav ul li a:hover{
     font-size: 18px;
 }
 
+/*contact sec*/
+.contact-box{
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact-details{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-details p{
+    font-size: 16px;
+}
+.contact-details h5{
+    font-size: 18px;
+}
+.contact-location{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-from-box{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width:100%;
+}
+.form input{
+    width:80%;
+   
+}
+#submitbtn{
+    width:100%;
+}
+.profile{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.profileitems img{
+    width:30px;
+    height:30px;
+}
+.profileitems p{
+    font-size: 10px;
+    word-wrap: break-word;
+}
+.profile .profileitems{
+    width:300px;
+}
+
 }
 
 @media only screen and (min-width: 600px) and (max-width:992px){
@@ -1076,6 +1243,53 @@ nav ul li a:hover{
 }
 .mockup-content h3{
     font-size: 22px;
+}
+/*contact sec*/
+.contact-box{
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-details{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-location{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-from-box{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width:100%;
+}
+.form input{
+    width:600px;
+}
+#submitbtn{
+    width:100%;
+}
+.profile{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.profile .profileitems{
+    width:500px;
 }
    
 }

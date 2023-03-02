@@ -13,6 +13,7 @@
  const shopbtn = document.getElementById("shop");
  const blogbtn = document.getElementById("blogel");
  const aboutbtn = document.getElementById("about");
+ const contactbtn = document.getElementById("contact");
 
  //navbar toggle
  function togglemenu(){
@@ -94,4 +95,7 @@ blogbtn.addEventListener("click",()=>{
 })
 aboutbtn.addEventListener("click",()=>{
   window.location.href="about.html"
+})
+contactbtn.addEventListener("click",()=>{
+  window.location.href="contact.html"
 })
