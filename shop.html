@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="css/images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
     <!--container box start-->
@@ -25,9 +26,9 @@
                         <li><a href="#blog" class="menuitems" id="blogel">Blog</a></li>
                         <li><a href="#about" class="menuitems" id="about">About</a></li>
                         <li><a href="#contact"class="menuitems" id="contact">Contact</a></li>
-                        <li><a href="#cart" class="menuitems"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#cart" class="menuitems"><i class="fa-solid fa-cart-shopping" id="cart"><span class="cart-count"><audio id="audioel"><source src="css/images/iPhone - Message Notification.mp3"> </audio></span></i></a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="menu-icon">
                     <i class="fa-solid fa-bars menuicon" id="iconmenu"></i>
                     <i class="fa-sharp fa-solid fa-xmark closeicon" id="iconclose"></i>
@@ -45,220 +46,471 @@
         </secction>
    <!--Hero section End-->
 
+   <div class="alertel">
+    <p>Your order is placed <i class="fa-solid fa-bell"></i><span><i class="fa-solid fa-circle-xmark" id="alertclose"></i></span></p>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
    <!--product section start-->
    <section id="products">
-
-    <h1 class="products-header">Featured-Products</h1>
-    <!--card items start-->
-    <div class="product-items">
-
-       <div class="cards card1">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img1.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card2">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img2.jpg" alt="product-img"> 
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool-T-Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card3">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img3.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card4">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img4.jpg" alt="product-img"> 
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card5">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img5.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
+    
+    <h3 id="shop-title">Shop Now</h3>
+    <div class="searchbox">
+        <input type="search" placeholder="search" id="searchbtn">
+    </div>
        
-       <div class="cards card6">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img6.jpg" alt="product-img">  
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card7">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img7.jpg" alt="product-img">
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card8">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img8.jpg" alt="product-img">  
-        </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <!--card items end-->
+    <div class="searchbuttons">
+        <button id="all" class="searchbutton" data-filter="all">All</button>
+        <button id="tshirtsbtn"  class="searchbutton" data-filter="tshirt">T-shirts</button>
+        <button id="shirtsbtn"  class="searchbutton" data-filter="shirt">Shirts</button>
+        <button id="pantsbtn"  class="searchbutton" data-filter="pants">Pants</button>
+        <button id="sunglassbtn"  class="searchbutton" data-filter="sunglass">Sunglass</button>
     </div>
-    <!--new arrivals card-->
-    <div class="product-items">
-
-       <div class="cards card1">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img10.jpg" alt="product-img">
+    <!--card items start-->
+   <div class="product-items">
+    <div class="cards">
+         <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt1.jpg" alt="product-img" class="cartimage">
+         </div>
+         <div class="details">
+            <h4 class="carthead">Cool T Shirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-639</h5>
+         </div>
+         <button class="addtocart">Add To Cart-<i class="fa-solid fa-cart-shopping"></i></button>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card2">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img11.jpg" alt="product-img"> 
+ 
+        <div class="productitem" data-item="shoes">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shoes1.avif" alt="product-img"  class="cartimage"> 
+         </div>
+         <div class="details">
+            <h4 class="carthead">Casual shoes</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-899</h5>
+         </div>
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool-T-Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card3">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img13.jpg" alt="product-img">
+ 
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt2.jpg" alt="product-img"  class="cartimage">
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool T Shirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-449</h5>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card4">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img14.jpg" alt="product-img"> 
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
 
-       <div class="cards card5">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img15.jpg" alt="product-img">
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant6.jpg" alt="product-img"  class="cartimage">
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-449</h5>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card6">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img16.jpg" alt="product-img">  
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card7">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img17.jpg" alt="product-img">
+ 
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt8.jpg" alt="product-img"  class="cartimage"> 
+         </div>
+         <div class="details">
+            <h4 class="carthead">Cool T Shirts</h4>
+         <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+         <h5 class="price">Rs-329</h5>
+         </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
-
-       <div class="cards card8">
-        <h4 class="collection">On Trend</h4>
-        <div class="card-img">
-            <img src="css/images/img18.jpg" alt="product-img">  
+     
+        <div class="productitem" data-item="sunglass">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/sunglass4.jpg" alt="product-img"  class="cartimage">
+         </div>
+        <div class="details">
+            <h4 class="carthead">sunglass</h4>
+         <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+         <h5 class="price">Rs-179</h5>
         </div>
-        <p class="header">Adidas</p>
-        <h4>Cool T Shirts</h4>
-        <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
-        <h5 class="price"><span>₹-789</span>, only ₹-649</h5>
-        <p class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></p>
-       </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+        
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant5.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">causal pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-609</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+ 
+        <div class="productitem" data-item="shoes">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shoes4.jpg" alt="product-img"  class="cartimage">
+         </div>
+        <div class="details">
+            <h4 class="carthead">casual shooes</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-49</h5>
+        </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+ 
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt4.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-69</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
 
-        <!--new arrivals card-->
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt9.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-69</h5>
+        </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="shoes">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shoes6.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal Shoes</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-699</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="sunglass">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/sunglass2.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Sunglass</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-199</h5>
+        </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+        
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant9.webp" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Sunglass</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-199</h5>
+        </div>
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="shirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shirt4.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Formal shirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-659</h5>
+        </div>
+       
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt3.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">cool Tshirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-599</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant1.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Formal pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-599</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="shoes">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shoes5.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal shoes</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-299</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="sunglass">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/sunglass5.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool sunglass</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-199</h5>
+        </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant7.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-399</h5>
+        </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt5.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool Tshirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-299</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant4.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Formal Pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-299</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="shoes">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shoes2.avif" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal shoes</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-399</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="sunglass">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/sunglass1.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool sunglass</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-299</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant5.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-899</h5>
+        </div>
+       
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt7.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal Tshirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-399</h5>
+        </div>
+         
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="shirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/shirt1 (2).jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal shirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-399</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="tshirt">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/tshirt6.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Cool Tshirts</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-399</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
+
+        <div class="productitem" data-item="pants">
+         <h4 class="collection">On Trend</h4>
+         <div class="card-img">
+             <img src="css/images/pant8.jpg" alt="product-img"  class="cartimage">  
+         </div>
+        <div class="details">
+            <h4 class="carthead">Causal pants</h4>
+            <div class="ratings"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <h5 class="price">Rs-299</h5>
+        </div>
+        
+         <button class="addtocart">Add To Cart-<span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></button>
+        </div>
     </div>
+   </div>
    </section>
-
-   <section id="morebtn">
-    <span>1</span>
-    <span>2</span>
-    <span><i class="fa-solid fa-arrow-right"></i></span>
-   </section>
-
+ <section class="cartbg">
+   
+   <i class="fa-sharp fa-solid fa-xmark" id="cartclose"></i>
+    <h4 class="cart-header">Order-Details</h4>
+    <p class="total-cart"></p> 
+    <!--<div class="cart-box">
+       <div class="cart-img">
+        <img src="css/images/shoes2.avif" class="cart-imgelement">
+       </div>
+       <div class="cart-details">
+        <p class="cart-title">casual-shoes</p>
+        <p class="cart-price">RS.72</p>
+        <input type="number" class="cart-quantity">
+       </div>
+       <div class="removeitem">
+        <p class="noofitem">Rs.72</p>
+        <button class="removebtn"><i class="fa-solid fa-trash-can"></i></button>
+       </div>
+       <div class="total-cart">360</div>
+      <button class="place-order">Place order</button>
+     </div>
+     
+    <div class="cart-box">
+       <div class="cart-img">
+        <img src="css/images/shoes2.avif" class="cart-imgelement"  class="cartimage">
+       </div>
+       <div class="cart-details">
+        <p class="cart-title">casual-shoes</p>
+        <p class="cart-price">RS.72</p>
+        <input type="number" class="cart-quantity">
+       </div>
+       <div class="removeitem">
+        <p class="noofitem">Rs.72</p>
+        <button class="removebtn"><i class="fa-solid fa-trash-can"></i></button>
+       </div>
+       <div class="total-cart">360</div>
+      <button class="place-order">Place order</button>
+     </div>-->
+     
+     
+    
+ </section>
    <!--signupbox start-->
    <section id="signupbox">
        <div class="singup-form">
@@ -318,7 +570,8 @@
    <!--footer section end-->
     </section>
  <!--container-box end-->
-</body>
-   <script src="app.js"></script>
+
+   
+ <script src="app.js"></script> 
 </body>
 </html>
